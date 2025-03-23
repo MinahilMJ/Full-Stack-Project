@@ -1,3 +1,4 @@
+{/*
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 
@@ -108,6 +109,34 @@ export default function Home() {
           Go to nextjs.org →
         </a>
       </footer>
+    </div>
+  );
+}
+*/}
+
+import Link from "next/link";
+
+// Muted the existing code using JSX comments
+export default function Home() {
+  return (
+    <div className="flex flex-col items-center justify-center min-h-screen p-8">
+      <h1 className="text-3xl font-bold mb-6">Welcome to Group Expense Tracker</h1>
+
+      <Link href="/auth">
+        <button className="px-4 py-2 bg-blue-500 text-white rounded-md">
+          Get Started
+        </button>
+      </Link>
+
+      {/* 
+      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+        <Image className="dark:invert" src="/next.svg" alt="Next.js logo" width={180} height={38} priority />
+        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left">
+          <li className="mb-2">Get started by editing <code>src/pages/index.tsx</code>.</li>
+          <li>Save and see your changes instantly.</li>
+        </ol>
+      </main>
+      */}
     </div>
   );
 }
