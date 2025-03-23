@@ -1,40 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Full-Stack-Project
+# GROUP EXPENSE TRACKER
 
-## Getting Started
+This project leverages **Supabase** for authentication, group and expense management, providing an intuitive interface for users to manage their finances effectively.
 
-First, run the development server:
+## AI Usage
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### AI Tools Used
+- **ChatGPT (OpenAI)**: ChatGPT assisted in various aspects of this project, from generating SQL queries and React components to debugging and improving the user experience.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### How AI Was Used
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+1. **Database Management & SQL Queries**
+   - ChatGPT helped generate SQL queries for validating user emails, inserting new groups and expenses, and subscribing to real-time updates in Supabase.
+   
+2. **React Components**
+   - I used ChatGPT to scaffold the authentication pages (login/sign-up), handle email validation, and integrate Supabase authentication.
+   
+3. **Frontend Styling**
+   - Styling of the login/sign-up pages was aided by ChatGPT, ensuring a consistent, modern look with a dark theme matching the overall dashboard design.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+4. **Troubleshooting & Optimization**
+   - Whenever I faced issues, ChatGPT provided solutions to debugging problems, optimized code, and recommended best practices to enhance the performance and readability of the application.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+5. **Code Review & Refinement**
+   - ChatGPT reviewed parts of the code and suggested improvements for clarity and efficiency.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### AI-Generated Parts
 
-## Learn More
+- SQL queries for user authentication and managing group/expense data.
+- Initial structure for React components (Auth page, Dashboard).
+- CSS styles for the login/signup pages, particularly the dark theme.
+- Core functionality for user sign-up, login, and real-time data updates from Supabase.
 
-To learn more about Next.js, take a look at the following resources:
+### Modifications
+- Based on AI suggestions, I tailored the code to suit the specific project needs, implemented edge case handling, and refined the UI.
+- I personalized the logic for group and expense management in the dashboard.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+## Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To run the project locally, follow these steps:
 
-## Deploy on Vercel
+1. Clone the repository:
+    ```bash
+    git clone <repository-url>
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+3. Set up environment variables for Supabase (accessible from the Supabase dashboard).
+
+4. Run the development server:
+    ```bash
+    npm run dev
+    ```
+
+5. Open the project in your browser:
+    ```bash
+    http://localhost:3000
+    ```
+
+## Features
+
+- **User Authentication**: Secure sign-up and login using email/password handled by Supabase.
+- **Group Management**: Users can create and manage groups to track shared expenses.
+- **Expense Management**: Users can easily add and track expenses within groups.
+- **Real-Time Updates**: The app uses Supabase's real-time features to sync updates instantly across devices.
+
+## Technologies Used
+
+- **Supabase**: Backend-as-a-service for authentication, database, and real-time capabilities.
+- **React**: Frontend framework for building the user interface.
+- **Next.js**: React framework for server-side rendering and routing.
+- **CSS (Styled Components)**: For custom dark theme styling.
+- **JavaScript/TypeScript**: For frontend logic.
